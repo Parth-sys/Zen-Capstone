@@ -20,7 +20,7 @@ import { Bikes } from "./Bikes";
           <div className="col-md-8"   key={index}  >
           
 
-     <Card className="bg-dark text-white" >
+     <Card className="bg-dark text-white " >
       <Card.Body className="cardbody">   
   <Card.Img src={t.image} alt="Card image"  style={{color:"black"}}  bottom="true"/>
   <Card.Text className="cardtext">Vehical Type:Sports</Card.Text>

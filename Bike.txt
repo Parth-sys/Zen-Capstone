@@ -1,0 +1,214 @@
+[
+    {
+      "name":"Meteor 350" ,
+       "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+         "Prices":[{
+            "Hour":700,
+            "Day":1200,
+            "Month":20000
+       }],
+    
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/bw/models/royal-enfield-meteor-350-fireball20201106124644.jpg?q=80\",
+          "description":"Royal Enfield Meteor 350"
+    },
+    
+    
+    
+    {
+      "name":" Bajaj Pulsar 150" ,
+        "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+           "Prices":[{
+            "Hour":200,
+            "Day":600,
+            "Month":7000
+       }],
+
+         
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/n/cw/ec/1/versions/bajaj-pulsar-150-neon-abs-bs-vi.jpg?q=80",
+          "description":"Bajaj Pulsar 150"
+    },
+    
+    
+
+     
+    {
+      "name":" Bajaj Pulsar ns200" ,
+        "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+           "Prices":[{
+            "Hour":400,
+            "Day":1000,
+            "Month":14000
+       }],
+
+         
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/bw/models/bajaj-pulsar-ns200-bs-vi20200211173001.jpg?q=80",
+          "description":"Bajaj Pulsar 150"
+    },
+    
+    
+   
+    {
+      "name":"honda-hness-cb350" ,
+       "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+         "Prices":[{
+            "Hour":700,
+            "Day":900,
+            "Month":12000
+       }],
+    
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/bw/models/honda-hness-cb350-dlx20201113120847.jpg?q=80",
+          "description":"Royal Enfield Meteor 350"
+    },
+    
+    
+    
+
+     
+    {
+      "name":"honda Unicorn" ,
+       "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+         "Prices":[{
+            "Hour":500,
+            "Day":500,
+            "Month":8000
+       }],
+    
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/n/cw/ec/49459/unicorn-right-front-three-quarter.jpeg?isig=0&q=80",
+          "description":"Royal Enfield Meteor 350"
+    },
+
+    
+    {
+      "name":"honda Activa" ,
+       "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+         "Prices":[{
+            "Hour":300,
+            "Day":800,
+            "Month":9000
+       }],
+    
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/n/cw/ec/44686/activa-6g-right-front-three-quarter-2.jpeg?isig=0&q=80",
+          "description":"Royal Enfield Meteor 350"
+    },
+    
+
+
+
+{
+      "name":"TVS ntorq" ,
+       "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+         "Prices":[{
+            "Hour":500,
+            "Day":900,
+            "Month":7000
+       }],
+    
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/n/cw/ec/102709/ntorq-125-right-front-three-quarter.jpeg?isig=0&q=80",
+          "description":"Royal Enfield Meteor 350"
+    },
+
+
+
+{
+      "name":"suzuki-access-125" ,
+       "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+         "Prices":[{
+            "Hour":300,
+            "Day":700,
+            "Month":4000
+       }],
+    
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/bw/models/suzuki-access-125-steel-wheel--drum--cbs-bs-vi20200106120649.jpg?q=80",
+          "description":"Royal Enfield Meteor 350"
+    },
+
+{
+      "name":"TVS Jupitar" ,
+       "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+         "Prices":[{
+            "Hour":300,
+            "Day":700,
+            "Month":4000
+       }],
+    
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/n/cw/ec/103181/jupiter-125-right-front-three-quarter-2.jpeg?isig=0&q=80",
+          "description":"Royal Enfield Meteor 350"
+    },
+
+{
+      "name":"Hero splendor" ,
+       "varients":[
+             "Hour",
+             "Day",
+              "Month"
+       
+          ],
+         "Prices":[{
+            "Hour":300,
+            "Day":700,
+            "Month":4000
+       }],
+    
+        "Category":"Urban",
+         "image":"https://imgd.aeplcdn.com/1280x720/bw/models/hero-splendor-plus-kick-alloy--bs-vi20200214191452.jpg?q=80",
+          "description":"Royal Enfield Meteor 350"
+    },
+
+  
+    ]
+
+

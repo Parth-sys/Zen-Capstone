@@ -42,7 +42,7 @@ useEffect(()=>{
 
       const [Loading,setLoading]=useState(false);
 
-       const [theme,settheme]=useState('dark')
+       const [theme,settheme]=useState('')
 
 
 
@@ -126,16 +126,19 @@ const Toggle=()=>{
 
     <Nav className="me-auto">
       <Nav.Link onClick={()=>navigate('/home')}>Home</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+      <Nav.Link href="/Price">Pricing</Nav.Link>
 
      {isLogIN?
-     <Nav.Link onClick={Logout}>Logout</Nav.Link>
-   
+     <button classname="btn btn-primary" onClick={Logout}>Logout</button>
+     
      :
      <Nav.Link  onClick={()=>navigate('/LogIn')}  >LOGIN</Nav.Link>
+     ?
+     
+    <button onClick={()=>navigate('/Signup')}  >SignUp</button>
+     :
+     <></>
     }
-    <button onClick={()=>navigate('/Signup')}   >SignUp</button>
-  
       <NavDropdown title="More" id="collasible-nav-dropdown">
         <NavDropdown.Item href="/Contactus">contact us</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -162,7 +165,7 @@ const Toggle=()=>{
      <BikeCarousal />
 
      </div>
-     <h3 className="booktext">Book your ride Now</h3>
+     <h3 className="booktext" style={{backgroundColor:'dodgerblue'}}>Book your ride</h3>
 
     <div className="wd-100">
     {Loading && <Loading></Loading>}

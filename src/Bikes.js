@@ -40,7 +40,7 @@ export function Bikes(){
           const [loading,setloading]=useState(false)    
           const [error,seterror]=useState();
 
-       console.log(bikes)
+      
     
     let navigate=useNavigate();
     return(
@@ -54,12 +54,15 @@ export function Bikes(){
         <Card className="bikecard" style={{ width: '18rem'  }} >
         <Card.Img variant="top" src={b.image} />
         <Card.Body>
-          <Card.Title style={{color:"black"}}>{b.name}</Card.Title>
+          <Card.Title style={{color:"black"}}>{}</Card.Title>
           <Card.Text>
-        <h4>  {b.price}</h4>
-         <h4>  {b.price1}</h4>
+        <h6>Hour:  {b.price}</h6>
+        <hr></hr>
+         <h6> Month:  {b.price1}</h6>
+         <hr></hr>
+            {b.name}
           </Card.Text>
-          <Button variant="primary"  onClick={()=>navigate(`/Bikedeatails/${b.name}`)}> Go </Button>
+          <Button variant="primary"  onClick={()=>navigate(`/Bikedeatails/${b.name}`)}> Get  </Button>
         </Card.Body>
       </Card>
       </div>

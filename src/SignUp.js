@@ -42,7 +42,7 @@ const  handlesub= async(e)=>{
       if(response.data){
          
         console.log("account created")   
-setsuc(true)   
+       setsuc(true)   
         
   setTimeout(() => {
     navigate('/') 
@@ -63,20 +63,13 @@ setsuc(true)
 
 
     return(
-        <div className="row justify-content-center ">
+        <div className="row justify-content-center m-1 " style={{backgroundColor:"Blue"}} >
 
+     <div className="Login m-1 " >  
 
+      <img className="img2"  src="https://cdn4.vectorstock.com/i/1000x1000/88/93/simple-white-bike-rental-icon-vector-16758893.jpg "alt="" style={{width:"30%",marginRight:"30px"}}></img>
 
-      
-
-        
-
-
-     <div className="Login p-5 " >  
-
-      <img  src="https://cdn4.vectorstock.com/i/1000x1000/88/93/simple-white-bike-rental-icon-vector-16758893.jpg "alt="" style={{width:"20%",marginRight:"30px"}}></img>
-
-    <Form onSubmit={handlesub}  >
+    <Form onSubmit={handlesub}   >
       <Row className="mb-3">
       <Col >
         <h4 className="Logh">SignUp</h4><br></br>
@@ -88,25 +81,25 @@ setsuc(true)
                   md="4" controlId="formBasicEmail" >
 
         <Form.Label >Email</Form.Label>
-        <Form.Control type="email" placeholder="Enter Email"     onChange={e => setemail(e.target.value)}   />
+        <Form.Control type="email" placeholder="Enter Email"     onChange={e => setemail(e.target.value)} required  />
       </Form.Group>
       
       <Form.Group  
                   md="4" controlId="formBasicEmail" >
 
         <Form.Label >Name</Form.Label>
-        <Form.Control type="text" placeholder="Enter Name"    onChange={e => setusername(e.target.value)}   />
+        <Form.Control type="text" placeholder="Enter Name"    onChange={e => setusername(e.target.value)}  required />
       </Form.Group>
     
       <Form.Group className="sm-2" controlId="formBasicPassword">
         <Form.Label    >Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" inputMode="Password"   onChange={e => setpassword(e.target.value)}       />
+        <Form.Control type="password" placeholder="Password" inputMode="Password"   onChange={e => setpassword(e.target.value)}    required   />
       </Form.Group>
      
       <a href="logIn" style={{textDecoration:"none",margin:"5px"}}>Alredy have an account? Login</a>
       </Col>
       <Button variant="primary" type="submit"   className="button">
-       submit
+      Submit
       </Button>
       </Row>
     

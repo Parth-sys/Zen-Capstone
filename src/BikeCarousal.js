@@ -3,7 +3,7 @@ import React from 'react';
 
  export function BikeCarousal(){
     return(
-        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" width="600px">
 
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -11,7 +11,7 @@ import React from 'react';
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div className="carousel-inner">
-    <div className="carousel-item active">
+    <div className="carousel-item active" height="300px">
       <img src="https://cdn.pixabay.com/photo/2021/05/25/09/51/road-6281973_960_720.jpg" className="d-block w-100" alt="..." />
       <div className="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>

@@ -10,18 +10,26 @@ import { Alert } from "bootstrap";
 import Loading from './Loding';
 import Error from "./Error";
 import Success from "./Success";
-import Themecontext from './App'
+
 
 function LogIn(){
 
     const [email,setemail]=useState("");
+
    const [password,setpassword]=useState("");
+   
    const [loading,setloading]=useState(false);
+   
    const [error,seterror]=useState();
-   const [suc,setsuc]=useState();
+   
+   const [suc,setsuc]=useState("");
   
     const [token,settoken]=useState()
    
+  //const[btnl,setbtnl]=useState(false)
+
+
+
 useEffect(()=>{
   
 },[])
@@ -34,16 +42,20 @@ let navigate=useNavigate()
 const  handlesub= async(e)=>{
     e.preventDefault();
         
+
          try{
       var response= await axios.post("http://localhost:5000/Login/Login",{
         email,
-        password,
+        password
       });
         
       console.log(response.data)
       
+   
+   
       if(response){
          localStorage.setItem("token",response.data)
+         localStorage.setItem('user',JSON.stringify(response.data))
          settoken(token)
           setsuc(true)
           setloading(true)
@@ -71,18 +83,16 @@ const  handlesub= async(e)=>{
 
     return(
     
-   <div className="d-flex justify-content-center mt-4 " style={{backgroundColor:"black"}}>     
+   <div className="d-flex justify-content-center mt-4  img1" style={{backgroundColor:"black"}}>     
    <div className="m-5 " >
-  <img src="https://cdn.profile.ru/wp-content/uploads/2021/07/Ducati-Panigale-V4.jpg" alt="" style={{width:"500px"}}></img>
+  <img src="https://cdn.profile.ru/wp-content/uploads/2021/07/Ducati-Panigale-V4.jpg" alt="" style={{width:"500px"}} className="img"></img>
 
    </div>
-     <div className="Login  ">  
+     <div className="Login">  
 
-      
+            
 
-      
-
-    <Form onSubmit={handlesub} >
+    <Form className="Loginform"  onSubmit={handlesub}  >
       <Row className="mb-3 align-items-center">
       <Col xs="auto" >
         <h4 className="Logh">Welcome....!</h4><br></br>
@@ -98,17 +108,18 @@ const  handlesub= async(e)=>{
       
      
     
-      <Form.Group className="sm-2" controlId="formBasicPassword" style={{marginTop:"5px"}}>
+      <Form.Group className="sm-2" controlId="formBasicPassword" style={{marginTop:"5px",marginBottom:"5px"}}>
         <Form.Label    >Password</Form.Label>
         <Form.Control type="password" placeholder="Password"    onChange={e => setpassword(e.target.value)} required      />
       </Form.Group>
       </Col>
       <Row>
-        {
-      loading && <Loading></Loading>}
-      <button type="submit" style={{width:"30%",marginTop:"15px",marginLeft:"30px"}}  className=" btn-default btn-primary">
-        Submit
-      </button>
+       {loading?<Loading></Loading> :""}
+      <Button type="submit" size="sm"   variant="primary" >
+         
+         Login
+      
+      </Button>
        </Row>
       <a href="/forgot"  style={{textDecoration:"none",marginTop:"20px"}}>Forgot Password?</a>
       </Row>

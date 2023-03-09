@@ -18,7 +18,7 @@ function ForgotPass(){
    const [error,seterror]=useState();
    const [suc,setsuc]=useState();
   
-    const [token,settoken]=useState()
+  const [token,settoken]=useState()
     
 useEffect(()=>{
   
@@ -43,12 +43,12 @@ const  handlesub= async(e)=>{
       if(response){
          localStorage.setItem("token",response.data)
          settoken(token)
-          setsuc(true)
-          navigate("/");
-      }
+         setsuc(true)
+         navigate("/");
+        }
         Alert("Login Successfully");
-      
-
+        
+        
 
     }catch(err){
       console.log(err)
@@ -59,16 +59,17 @@ const  handlesub= async(e)=>{
 
 
 
+  console.log(token)
 
 
     return(
         
-     <div className="Login">  
+     <div className="Forgot container">  
 
       
 
     <Form onSubmit={handlesub}  >
-      <Row className="mb-3">
+      <Row className="mb-3 " >
       <Col >
         <h4 className="Logh">Registerd Email</h4><br></br>
          {loading && <Loading></Loading>}
